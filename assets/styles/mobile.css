@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(236, 100%, 87%); /* white */
+}
+
+.person-card {
+    background-color: hsl(235, 46%, 20%);
+    width: 335px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.container-report-for {
+    width: 335px;
+    height: 125px;
+    background-color: hsl(246, 80%, 60%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.container-report-for-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.jeremy-icon {
+    height: 64px;
+    width: auto;
+    border: solid 3px white;
+    border-radius: 50%;
+}
+
+.period-toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.period-toggle-button {
+    background: none;
+    padding: 0;
+    border: none;
+}

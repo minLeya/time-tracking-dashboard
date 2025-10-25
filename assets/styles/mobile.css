@@ -174,3 +174,7 @@ body {
   align-items: center;
   justify-content: right;
 }
+
+.period-toggle-button.active {
+  color: whitesmoke;
+}

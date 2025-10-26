@@ -47,6 +47,6 @@ function updateDashboard(data, period) {
     const previousData = element.timeframes[period].previous;
 
     hours.textContent = `${currentData}hrs`;
-    previous.textContent = `Last ${labels[period]} - ${previousData}`;
+    previous.textContent = `Last ${labels[period]} - ${previousData}hrs`;
   });
 }

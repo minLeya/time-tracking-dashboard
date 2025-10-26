@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: hsl(236, 100%, 87%); /* white */
 }
 
@@ -61,6 +61,7 @@ body {
 .jeremy-name {
   color: whitesmoke;
   font-size: 19px;
+  font-weight: 200;
 }
 
 .jeremy-icon {
@@ -135,7 +136,7 @@ body {
   background-image: url("../images/icon-self-care.svg");
 }
 
-.dahboard-card-text {
+.dashboard-card-text {
   width: inherit;
   height: 100px;
   background-color: hsl(235, 46%, 20%);

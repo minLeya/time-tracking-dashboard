@@ -8,7 +8,9 @@ fetch("assets/data/data.json")
 
     const buttons = document.querySelectorAll(".period-toggle-button");
 
-    document.querySelector(".period-toggle-button.weekly").classList.add("active");
+    document
+      .querySelector(".period-toggle-button.weekly")
+      .classList.add("active");
 
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
@@ -16,7 +18,7 @@ fetch("assets/data/data.json")
         if (button.classList.contains("weekly")) currentPeriod = "weekly";
         if (button.classList.contains("monthly")) currentPeriod = "monthly";
 
-        buttons.forEach(b => b.classList.remove("active"));
+        buttons.forEach((b) => b.classList.remove("active"));
         button.classList.add("active");
 
         updateDashboard(data, currentPeriod);
@@ -30,10 +32,10 @@ fetch("assets/data/data.json")
 function updateDashboard(data, period) {
   data.forEach((element) => {
     const labels = {
-        daily: "Day",
-        weekly: "Week",
-        monthly: "Month"
-    }
+      daily: "Yesterday",
+      weekly: "Week",
+      monthly: "Month",
+    };
 
     const title = element.title.toLowerCase().replace(" ", "-");
     const card = document.querySelector(`.dashboard-card.${title}`);
@@ -47,6 +49,10 @@ function updateDashboard(data, period) {
     const previousData = element.timeframes[period].previous;
 
     hours.textContent = `${currentData}hrs`;
-    previous.textContent = `Last ${labels[period]} - ${previousData}hrs`;
+    if (period === "daily") {
+      previous.textContent = `${labels[period]} - ${previousData}hrs`;
+    } else {
+      previous.textContent = `Last ${labels[period]} - ${previousData}hrs`;
+    }
   });
 }

@@ -27,6 +27,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
+    padding: 30px;
   }
 
   .jeremy-icon {
@@ -61,7 +62,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px;
+    padding: 30px;
     gap: 20px;
   }
 
@@ -101,6 +102,9 @@
     background-size: 65px;
   }
 
+  .period-toggle-button {
+    font-size: 16px;
+  }
   .period-toggle-button:hover {
     color: whitesmoke;
   }

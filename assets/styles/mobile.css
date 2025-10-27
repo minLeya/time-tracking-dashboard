@@ -61,7 +61,7 @@ body {
 .jeremy-name {
   color: whitesmoke;
   font-size: 19px;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .jeremy-icon {
@@ -88,6 +88,7 @@ body {
   padding: 0;
   border: none;
   font-size: 15px;
+  font-weight: 200;
 }
 
 .dashboard-card {
@@ -159,7 +160,7 @@ body {
 .title {
   color: whitesmoke;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .ellipsis-div {
@@ -177,7 +178,7 @@ body {
 .hours {
   color: whitesmoke;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .previous {
@@ -185,6 +186,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: right;
+  font-weight: 100;
 }
 
 .period-toggle-button.active {
